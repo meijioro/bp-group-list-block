@@ -56,8 +56,8 @@ registerBlockType("bp-group-list/block", {
 	 */
 	edit: (props) => {
 		const {
-			attributes: { columns, limit },
-			setAttributes, //special property
+			attributes: { columns, rows },
+			setAttributes,
 		} = props;
 
 		return (
