@@ -1,0 +1,60 @@
+.bp-group-list__groups {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: $gutter;
+	list-style: none;
+	margin: 0 0 1em;
+	padding: 0;
+	position: relative;
+
+	@media (min-width: $bp-md - 1) {
+		grid-template-columns: repeat(var(--columns), 1fr);
+	}
+}
+
+.bp-group-list_group {
+	display: block;
+	position: relative;
+	overflow: hidden;
+
+	.avatar {
+		transition: all 0.3s ease-out 0s;
+	}
+	&:hover,
+	&:focus {
+		.avatar {
+			transform: scale(1.15);
+		}
+		.bp-group-list__group-name {
+			transform: translate(0, -50%);
+		}
+	}
+}
+
+.bp-group-list__group-name {
+	display: block;
+	position: absolute;
+	background-color: rgba(#fff, 0.7);
+	padding: 2px 5px;
+	max-width: 90%;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transition: all 0.3s ease-out 0s;
+	font-size: 1rem;
+
+	@media (min-width: $bp-md) {
+		font-size: 1.2rem;
+	}
+}
+
+.bp-group-list__view-more {
+	font-size: 1rem;
+}
+
+// Target non-touchscrens
+@media (hover: hover) {
+	.bp-group-list__group-name {
+		transform: translate(200%, -50%);
+	}
+}

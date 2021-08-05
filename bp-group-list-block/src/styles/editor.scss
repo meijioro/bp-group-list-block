@@ -1,0 +1,7 @@
+.block-editor-block-list__block .components-flex__item {
+	max-width: none;
+}
+
+.block-editor-block-list__block label[class*="BaseLabel"] {
+	overflow: auto;
+}

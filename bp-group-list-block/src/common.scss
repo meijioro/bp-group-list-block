@@ -1,0 +1,20 @@
+$blue: #003e7e;
+$gutter: 15px;
+
+.sr-only {
+	border: none;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+// Breakpointss
+// -------------------------
+$bp-sm: 320px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1440px;
